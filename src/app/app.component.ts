@@ -10,4 +10,14 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-course';
+
+  _message = "Aarya";
+  onchange(val:any){
+    this._message = val;
+  }
+  students:any = [
+    {name:"John",Proffession:"Engineer",Age:"30"},
+    {name:"Alice",Proffession:"Doctor",Age:"35"},
+    {name:"Andrew",Proffession:"Lawyer",Age:"20"}
+  ]
 }
