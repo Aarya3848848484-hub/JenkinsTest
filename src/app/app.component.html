@@ -2,7 +2,8 @@
 
 <input type="text" #txtname (keyup)="onchange(txtname.value)">
 
-Hello {{_message}}
+Hello !!!!!!!!!!! {{_message}}
+
 
 
 <table border="1">
@@ -13,8 +14,8 @@ Hello {{_message}}
   </tr>
   @for(student of students;track student.name){
     <tr>
-      <td>{{student.name}}</td>
-      <td>{{student.Proffession}}</td>
+      <td>{{student.name | uppercase}}</td>
+      <td>{{student.Proffession | slice:2:5}}</td>
       <td>{{student.Age}}</td>
     </tr>
   }
