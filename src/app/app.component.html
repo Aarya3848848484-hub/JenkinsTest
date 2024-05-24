@@ -1,22 +1,23 @@
-<h1>Hello EveryOne</h1>
+<div class="Title">
+   <h1>NG Bank Registration Form</h1>
+</div>
+<br>
 
-<input type="text" #txtname (keyup)="onchange(txtname.value)">
-
-Hello !!!!!!!!!!! {{_message}}
-
-
-
-<table border="1">
-  <tr>
-    <td>Name</td>
-    <td>Proffession</td>
-    <td>Age</td>
-  </tr>
-  @for(student of students;track student.name){
-    <tr>
-      <td>{{student.name | uppercase}}</td>
-      <td>{{student.Proffession | slice:2:5}}</td>
-      <td>{{student.Age}}</td>
-    </tr>
-  }
-</table>
+<div class="container">
+  <section>
+    <div>
+      <label class="label">First Name</label><br>
+      <label class="label">Last Name</label><br>
+      <label class="label">Department/Office</label><br>
+      <label class="label">Username</label><br>
+      <label class="label">Password</label><br>
+      <label class="label">Confirm Password</label><br>
+      <label class="label">Email</label>
+    </div>
+  </section>
+  <section>
+    <div>
+      <input type="text" class="input">
+    </div>
+  </section>
+  </div>

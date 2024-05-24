@@ -1,4 +1,22 @@
-h1{
+.Title{
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.container{
+    display: flex;
+}
+
+.label{
+    display:flex;
+    justify-content: right;
+    margin-right: 600px;
+}
+
