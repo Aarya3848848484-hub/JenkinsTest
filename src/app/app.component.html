@@ -1,7 +1,6 @@
 <div class="Title">
-   <h1>NG Bank Registration Form</h1>
+   <h1>Hello World!!!</h1>
 </div>
-<br>
 
 <div class="container">
   <section>
@@ -17,19 +16,23 @@
     </div>
   </section>
   <section>
+    <form [formGroup]="regForm" (ngSubmit)="register()">
     <div>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
-      <input type="text" class="input" size="50"><br><br>
+      <div><input type="text" class="input" size="50" formControlName="fname"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="lname"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="office"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="username"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="password"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="confirm_password"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="email"></div><br>
+      <div><input type="text" class="input" size="50" formControlName="contactno"></div>
     </div>
+    <br>
+    <div>
+      <button type="submit">Submit</button> &nbsp;
+      <button>Reset</button>
+    </div>
+    </form>
   </section>
   </div>
-  <div class="btn">
-    <button>Submit</button> &nbsp;
-    <button>Reset</button>
-  </div>
+  
